@@ -1,7 +1,19 @@
 body{
-     background-color:burlywood;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    color: #00FF66; /* Verde fosforescente típico */
+    text-shadow: 0 0 5px #00FF66;
 }
 
+header{
+    background-color: #001a00;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid #00FF66;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 .titulo{
     color: black;
     text-align: center;
@@ -9,13 +21,24 @@ body{
 }
 
 nav ul{
-     list-style-type: none;
-     color: white;
-     display: flex;
-     gap: 2rem;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
 }
 
 nav a{
-     color: white;
-     text-decoration: none;
+    color: #00FF66;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    margin: 3rem 0; /* separa visualmente las secciones */
 }
